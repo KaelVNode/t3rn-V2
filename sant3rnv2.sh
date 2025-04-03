@@ -51,7 +51,7 @@ done
 INSTALL_DIR="/home/$EXECUTOR_USER/t3rn"
 SERVICE_FILE="/etc/systemd/system/t3rn-executor.service"
 ENV_FILE="/etc/t3rn-executor.env"
-EXECUTOR_VERSION="v0.59.0"
+EXECUTOR_VERSION="v0.61.0"
 EXECUTOR_FILE="executor-linux-$EXECUTOR_VERSION.tar.gz"
 EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/$EXECUTOR_VERSION/$EXECUTOR_FILE"
 
@@ -89,7 +89,7 @@ fi
 # Konfigurasi environment file
 sudo bash -c "cat > $ENV_FILE" <<EOL
 RPC_ENDPOINTS='{
-  "l2rn": ["http://b2n.rpc.caldera.xyz/http"],
+  "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/public", "https://b2n.rpc.caldera.xyz/http"],
   "arbt": ["https://arbitrum-sepolia.drpc.org", "https://arb-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
   "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
   "opst": ["https://sepolia.optimism.io", "https://opt-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
