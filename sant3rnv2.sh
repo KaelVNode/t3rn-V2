@@ -51,7 +51,7 @@ done
 INSTALL_DIR="/home/$EXECUTOR_USER/t3rn"
 SERVICE_FILE="/etc/systemd/system/t3rn-executor.service"
 ENV_FILE="/etc/t3rn-executor.env"
-EXECUTOR_VERSION="v0.62.0"
+EXECUTOR_VERSION="v0.63.1"
 EXECUTOR_FILE="executor-linux-$EXECUTOR_VERSION.tar.gz"
 EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/$EXECUTOR_VERSION/$EXECUTOR_FILE"
 
