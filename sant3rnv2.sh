@@ -51,7 +51,7 @@ done
 INSTALL_DIR="/home/$EXECUTOR_USER/t3rn"
 SERVICE_FILE="/etc/systemd/system/t3rn-executor.service"
 ENV_FILE="/etc/t3rn-executor.env"
-EXECUTOR_VERSION="v0.70.0"
+EXECUTOR_VERSION="v0.77.1"
 EXECUTOR_FILE="executor-linux-$EXECUTOR_VERSION.tar.gz"
 EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/$EXECUTOR_VERSION/$EXECUTOR_FILE"
 
@@ -96,11 +96,14 @@ RPC_ENDPOINTS='{
   "blst": ["https://sepolia.blast.io", "https://blast-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
   "opst": ["https://sepolia.optimism.io", "https://opt-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
   "unit": ["https://unichain-sepolia.drpc.org", "https://unichain-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
-  "seit": ["https://evm-rpc-testnet.sei-apis.com"]
+  "seit": ["https://evm-rpc-testnet.sei-apis.com"],
+  "bsct": ["https://binance-testnet-rpc.publicnode.com/"]
+  
+something wrong with this ?
 }'
 EXECUTOR_MAX_L3_GAS_PRICE="$GAS_PRICE"
 PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
-ENABLED_NETWORKS="l2rn,arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,blast-sepolia,Sei Testnet"
+ENABLED_NETWORKS="l2rn,arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,blast-sepolia,sei-testnet,binance-testnet,monad-testnet"
 EOL
 
 # Berikan hak akses ke user
