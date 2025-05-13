@@ -98,8 +98,6 @@ RPC_ENDPOINTS='{
   "unit": ["https://unichain-sepolia.drpc.org", "https://unichain-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
   "seit": ["https://evm-rpc-testnet.sei-apis.com"],
   "bsct": ["https://binance-testnet-rpc.publicnode.com"]
-  
-something wrong with this ?
 }'
 EXECUTOR_MAX_L3_GAS_PRICE="$GAS_PRICE"
 PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
