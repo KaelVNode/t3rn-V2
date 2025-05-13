@@ -97,7 +97,7 @@ RPC_ENDPOINTS='{
   "opst": ["https://sepolia.optimism.io", "https://opt-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
   "unit": ["https://unichain-sepolia.drpc.org", "https://unichain-sepolia.g.alchemy.com/v2/$APIKEY_ALCHEMY"],
   "seit": ["https://evm-rpc-testnet.sei-apis.com"],
-  "bsct": ["https://binance-testnet-rpc.publicnode.com/"]
+  "bsct": ["https://binance-testnet-rpc.publicnode.com"]
   
 something wrong with this ?
 }'
